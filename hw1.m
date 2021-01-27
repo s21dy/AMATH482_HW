@@ -1,7 +1,7 @@
 % Clean workspace
 clear all; close all; clc
 
-load subdata/subdata.mat % Imports the data as the 262144x49 (space by time) matrix called subdata
+load subdata.mat % Imports the data as the 262144x49 (space by time) matrix called subdata
 
 L = 10; % spatial domain
 n = 64; % Fourier modes
