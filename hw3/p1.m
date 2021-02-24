@@ -89,7 +89,7 @@ for i = 1:d3
    %imshow(img)
    
    % locate the coordinates of the mass
-   thresh = img(:) > 247;
+   thresh = img(:) > 248;
    indeces = find(thresh);
    [y, x] = ind2sub(size(img),indeces);
    XY3 = [XY3; mean(x), mean(y)];
@@ -169,14 +169,7 @@ title("Ideal Case: Energy of each Diagonal Variance");
 xlabel("Diagonal Variances"); ylabel("Energy Captured");
 
 figure()
-subplot(2,1,1)
-plot(1:min_len, alldata(2,:),1:min_len, alldata(1,:), 'Linewidth', 2)
-ylabel("Displacement (pixels)"); xlabel("Time (frames)"); 
-title("Ideal Case Original displacement across Z axis and XY-plane (cam 1)");
-legend("Z", "XY")
-
-subplot(2,1,2)
-plot(1:min_len, Y(:,1),'Linewidth', 2)
+plot(1:min_len, Y(:,1), 'Linewidth', 2)
 ylabel("Displacement (pixels)"); xlabel("Time (frames)"); 
 title("Ideal Case: Displacement across principal component directions");
 legend("PC1")

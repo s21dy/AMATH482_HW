@@ -168,12 +168,7 @@ title("Horizontal Displacement and Rotation: Energy of each Diagonal Variance");
 xlabel("Diagonal Variances"); ylabel("Energy Captured");
 
 figure()
-subplot(2,1,1)
-plot(1:min_len, alldata(2,:),1:min_len, alldata(1,:),'Linewidth', 2)
-ylabel("Displacement (pixels)"); xlabel("Time (frames)"); 
-title("Horizontal Displacement and Rotation: Original displacement across Z axis and XY-plane (cam 1)");
-legend("Z","XY");
-subplot(2,1,2)
+
 plot(1:min_len, Y(:,1), 1:min_len, Y(:,2), 1:min_len, Y(:,3), 'Linewidth', 2)
 ylabel("Displacement (pixels)"); xlabel("Time (frames)"); 
 title("Horizontal Displacement and Rotation: Displacement across principal component directions");

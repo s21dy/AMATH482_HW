@@ -165,12 +165,7 @@ title("Horizontal Displacement: Energy of each Diagonal Variance");
 xlabel("Diagonal Variances"); ylabel("Energy Captured");
 
 figure()
-subplot(2,1,1)
-plot(1:237, alldata(2,:),1:237, alldata(1,:),'Linewidth', 2)
-ylabel("Displacement (pixels)"); xlabel("Time (frames)"); 
-title("Horizontal Displacement: Original displacement across Z axis and XY-plane (cam 1)");
-legend("Z", "XY")
-subplot(2,1,2)
+
 plot(1:237, Y(:,1), 1:237, Y(:,2), 1:237, Y(:,3), 'Linewidth', 2)
 ylabel("Displacement (pixels)"); xlabel("Time (frames)"); 
 title("Horizontal Displacement: Displacement across principal component directions");
